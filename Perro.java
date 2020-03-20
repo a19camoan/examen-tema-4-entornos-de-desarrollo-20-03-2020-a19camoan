@@ -1,3 +1,6 @@
+/**
+@author Andres Castillero Moriana
+**/
 
 public class Perro {
 
