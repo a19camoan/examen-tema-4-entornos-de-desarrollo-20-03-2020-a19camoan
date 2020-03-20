@@ -1,12 +1,13 @@
+
 /**
  * @author Jaime Rabasco Ronda
  */
-/*Refactorización
-Extrae una superclase Vehículo con los campos
+/*Refactorizacion
+Extrae una superclase Vehiculo con los campos
 	num_serie
 	fabricante
 	color
-y los métodos
+y los metodos
 	getNum_serie(), setNum_serie()
 	getFabricante(), setFabricante()
 	getColor(), setColor()*/
@@ -14,13 +15,8 @@ enum Color {
 	ROJO, AZUL, VERDE, AMARILLO, NARANJA
 };
 
-public class Coche {
-	private int num_serie;
+public class Coche extends Vehiculo {
 	private int cilindrada;
-	private String fabricante;
-	Color color;
-
-	
 	protected Coche(int num_serie, int cilindrada, String fabricante, Color color) {
 		this.num_serie = num_serie;
 		this.cilindrada = cilindrada;
